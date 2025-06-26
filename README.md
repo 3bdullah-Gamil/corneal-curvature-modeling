@@ -98,7 +98,15 @@ pip install -r requirements.txt
 ```
 
 ## 📁 Project Structure
+```bash
+from src.shooting_method import ShootingMethod
+from src.finite_difference import FiniteDifferenceMethod
+from src.pinn_method import PINNMethod
+```
 
+
+## 📈 Usage Examples
+```bash
 corneal-curvature-modeling/
 ├── README.md
 ├── requirements.txt
@@ -128,12 +136,6 @@ corneal-curvature-modeling/
     ├── method_comparison.ipynb
     └── visualization.ipynb
 
-
-## 📈 Usage Examples
-```bash
-from src.shooting_method import ShootingMethod
-from src.finite_difference import FiniteDifferenceMethod
-from src.pinn_method import PINNMethod
 ```
 
 ### Set parameters
@@ -195,13 +197,21 @@ This project is licensed under the [MIT License](LICENSE) - see the **LICENSE** 
 
 **Team 3-SBE28**
 
-- [Add team member names and contributions here]  
-  *(Example: John Doe - Numerical modeling implementation)*  
-  *(Example: Jane Smith - Data visualization and analysis)*  
+- Abdulrahman hassan     
+- Abdulrahman Yasser
+- Moustafa Ali
+- Mostafa Hazem
+- Ganna Ahmed
+- Shaimaa Abdelziz
+- Sohaila Emad
+- Shahd Mabrouk
+- Mariam Mohamed
+- Mariam Hosny
+
 
 ## Course Information
 
-- **Course:** SBE2250/SBEG108 - Numerical Methods in Biomedical Engineering  
+- **Course:** SBEG108 - Numerical Methods in Biomedical Engineering  
 - **Instructor:** Dr. Muhammad Rushdi  
 - **Institution:** Cairo University, Faculty of Engineering  
 - **Academic Year:** 2024/2025  
@@ -211,11 +221,9 @@ This project is licensed under the [MIT License](LICENSE) - see the **LICENSE** 
 
 For questions or collaborations, please contact:
 
-- **Email:** [your-email@example.com]  
-- **Project Repository:** [Corneal Curvature Modeling](https://github.com/yourusername/corneal-curvature-modeling)  
-- **Issues Tracker:** [GitHub Issues](https://github.com/yourusername/corneal-curvature-modeling/issues)  
+- **Email:** [abdullahgamil285@gmail.com]  
+- **Project Repository:** [Corneal Curvature Modeling](https://github.com/3bdullah-Gamil/corneal-curvature-modeling)  
 
 ---
 
 ### ❖ If you found this project helpful, please consider giving it a ⭐ on GitHub!
-*(Go to repository Settings to activate GitHub Pages if needed)*
