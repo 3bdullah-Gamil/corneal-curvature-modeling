@@ -77,3 +77,145 @@ scipy >= 1.7.0
 matplotlib >= 3.4.0
 torch >= 1.9.0
 pandas >= 1.3.0
+```
+### Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/3bdullah-Gamil/corneal-curvature-modeling.git
+cd corneal-curvature-modeling
+```
+
+### 2. Create virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## 📁 Project Structure
+
+corneal-curvature-modeling/
+├── README.md
+├── requirements.txt
+├── main.py                 # Main execution script
+├── config.py              # Configuration parameters
+├── src/
+│   ├── __init__.py
+│   ├── reference_mol.py    # Method of Lines (Reference)
+│   ├── shooting_method.py  # Shooting + RK4 implementation
+│   ├── finite_difference.py # Finite Difference + Newton-Raphson
+│   ├── pinn_method.py     # Physics-Informed Neural Network
+│   ├── utils.py           # Utility functions
+│   └── analysis.py        # Performance analysis and plotting
+├── data/
+│   └── reference_solution.csv  # MOL reference data
+├── results/
+│   ├── plots/             # Generated figures
+│   └── comparison_results.csv
+├── docs/
+│   ├── report.pdf         # IEEE conference paper
+│   ├── mathematical_model.md
+│   └── method_details.md
+├── tests/
+│   ├── test_methods.py
+│   └── test_accuracy.py
+└── notebooks/
+    ├── method_comparison.ipynb
+    └── visualization.ipynb
+
+
+## 📈 Usage Examples
+```bash
+from src.shooting_method import ShootingMethod
+from src.finite_difference import FiniteDifferenceMethod
+from src.pinn_method import PINNMethod
+```
+
+### Set parameters
+a, b = 2.0, 1.0  # Dimensionless parameters
+
+### Shooting Method
+shooter = ShootingMethod(a=a, b=b)
+x_shoot, h_shoot = shooter.solve()
+
+### Finite Difference Method
+fd_solver = FiniteDifferenceMethod(a=a, b=b, n_points=21)
+x_fd, h_fd = fd_solver.solve()
+
+### PINN Method
+pinn = PINNMethod(a=a, b=b)
+pinn.train(epochs=2000)
+x_pinn, h_pinn = pinn.predict()
+
+## 🔬 Scientific Context
+
+This work addresses the mathematical modeling of corneal biomechanics, which is crucial for:
+
+- **Clinical Applications**: Corneal surgery planning and outcome prediction  
+- **Biomedical Engineering**: Understanding corneal deformation under various loading conditions  
+- **Computational Methods**: Comparing traditional numerical methods with modern ML approaches
+
+## 📊 Performance Metrics
+
+### Accuracy Metrics
+- Mean Squared Error (MSE)  
+- Mean Absolute Error (MAE)  
+- Maximum Absolute Error  
+- Maximum Relative Error  
+
+### Computational Metrics  
+- Execution Time  
+- Convergence Rate  
+- Memory Usage  
+- Stability Analysis
+
+## 🤝 Contributing
+1. Fork the repository  
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)  
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)  
+4. Push to the branch (`git push origin feature/AmazingFeature`)  
+5. Open a Pull Request  
+
+## 📚 References
+
+1. W. E. Schiesser, *"Differential Equation Analysis in Biomedical Science and Engineering: Ordinary Differential Equation Applications with R,"* John Wiley & Sons, 2014.  
+2. W. Okrasifski and L. Plociniczak, *"A nonlinear mathematical model of the corneal shape,"* Nonlinear Analysis: Real World Applications, vol. 13, no. 3, pp. 1498-1505, 2012.  
+3. [Physics-Based Deep Learning](https://physicsbaseddeeplearning.org/)  
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE) - see the **LICENSE** file for details.
+
+## 👥 Team Members
+
+**Team 3-SBE28**
+
+- [Add team member names and contributions here]  
+  *(Example: John Doe - Numerical modeling implementation)*  
+  *(Example: Jane Smith - Data visualization and analysis)*  
+
+## Course Information
+
+- **Course:** SBE2250/SBEG108 - Numerical Methods in Biomedical Engineering  
+- **Instructor:** Dr. Muhammad Rushdi  
+- **Institution:** Cairo University, Faculty of Engineering  
+- **Academic Year:** 2024/2025  
+- **Semester:** Spring 2025  
+
+## Contact
+
+For questions or collaborations, please contact:
+
+- **Email:** [your-email@example.com]  
+- **Project Repository:** [Corneal Curvature Modeling](https://github.com/yourusername/corneal-curvature-modeling)  
+- **Issues Tracker:** [GitHub Issues](https://github.com/yourusername/corneal-curvature-modeling/issues)  
+
+---
+
+### ❖ If you found this project helpful, please consider giving it a ⭐ on GitHub!
+*(Go to repository Settings to activate GitHub Pages if needed)*
