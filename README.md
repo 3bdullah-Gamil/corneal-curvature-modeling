@@ -113,13 +113,10 @@ corneal-curvature-modeling/
 ├── main.py                 # Main execution script
 ├── config.py              # Configuration parameters
 ├── src/
-│   ├── __init__.py
 │   ├── reference_mol.py    # Method of Lines (Reference)
 │   ├── shooting_method.py  # Shooting + RK4 implementation
 │   ├── finite_difference.py # Finite Difference + Newton-Raphson
 │   ├── pinn_method.py     # Physics-Informed Neural Network
-│   ├── utils.py           # Utility functions
-│   └── analysis.py        # Performance analysis and plotting
 ├── data/
 │   └── reference_solution.csv  # MOL reference data
 ├── results/
@@ -130,11 +127,9 @@ corneal-curvature-modeling/
 │   ├── mathematical_model.md
 │   └── method_details.md
 ├── tests/
-│   ├── test_methods.py
-│   └── test_accuracy.py
-└── notebooks/
-    ├── method_comparison.ipynb
-    └── visualization.ipynb
+    ├── test_methods.py
+    └── test_accuracy.py
+
 
 ```
 
