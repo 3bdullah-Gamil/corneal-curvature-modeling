@@ -99,15 +99,6 @@ pip install -r requirements.txt
 
 ## 📁 Project Structure
 ```bash
-from src.shooting_method import ShootingMethod
-from src.finite_difference import FiniteDifferenceMethod
-from src.pinn_method import PINNMethod
-```
-
-
-## 📈 Usage Examples
-```bash
-corneal-curvature-modeling/
 ├── README.md
 ├── requirements.txt
 ├── main.py                 # Main execution script
@@ -125,7 +116,15 @@ corneal-curvature-modeling/
     ├── report.pdf         # IEEE conference paper
     └── Reference Book 
 
+```
 
+
+## 📈 Usage Examples
+```bash
+from src.shooting_method import ShootingMethod
+from src.finite_difference import FiniteDifferenceMethod
+from src.pinn_method import PINNMethod
+corneal-curvature-modeling/
 
 ```
 
