@@ -118,32 +118,6 @@ pip install -r requirements.txt
 
 ```
 
-
-## 📈 Usage Examples
-```bash
-from src.shooting_method import ShootingMethod
-from src.finite_difference import FiniteDifferenceMethod
-from src.pinn_method import PINNMethod
-corneal-curvature-modeling/
-
-```
-
-### Set parameters
-a, b = 2.0, 1.0  # Dimensionless parameters
-
-### Shooting Method
-shooter = ShootingMethod(a=a, b=b)
-x_shoot, h_shoot = shooter.solve()
-
-### Finite Difference Method
-fd_solver = FiniteDifferenceMethod(a=a, b=b, n_points=21)
-x_fd, h_fd = fd_solver.solve()
-
-### PINN Method
-pinn = PINNMethod(a=a, b=b)
-pinn.train(epochs=2000)
-x_pinn, h_pinn = pinn.predict()
-
 ## 🔬 Scientific Context
 
 This work addresses the mathematical modeling of corneal biomechanics, which is crucial for:
