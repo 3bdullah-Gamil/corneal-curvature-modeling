@@ -120,15 +120,11 @@ corneal-curvature-modeling/
 ├── data/
 │   └── reference_solution.csv  # MOL reference data
 ├── results/
-│   ├── plots/             # Generated figures
-│   └── comparison_results.csv
+│   ├── plots             # Generated figures
 ├── docs/
-│   ├── report.pdf         # IEEE conference paper
-│   ├── mathematical_model.md
-│   └── method_details.md
-├── tests/
-    ├── test_methods.py
-    └── test_accuracy.py
+    ├── report.pdf         # IEEE conference paper
+    └── Reference Book 
+
 
 
 ```
